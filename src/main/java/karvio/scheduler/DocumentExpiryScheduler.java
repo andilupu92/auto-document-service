@@ -20,7 +20,7 @@ public class DocumentExpiryScheduler {
     private final NotificationServiceClient notificationClient;
 
     // Every day at 08:00 AM
-    @Scheduled(cron = "0 00 07 * * ?")
+    @Scheduled(cron = "0 00 15 * * ?")
     @Transactional
     public void checkDocumentExpirations() {
         LocalDate today = LocalDate.now();
